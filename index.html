@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My White Label Game</title>
+  <style>
+    body { text-align:center; background:#111; color:white; }
+    button { padding:15px 30px; font-size:18px; }
+  </style>
+</head>
+<body>
+
+<h1 id="gameName">Tap Game</h1>
+<p>Score: <span id="score">0</span></p>
+<button onclick="tap()">TAP</button>
+
+<script>
+let score = 0;
+
+function tap() {
+  score++;
+  document.getElementById("score").innerText = score;
+}
+</script>
+
+</body>
+</html>
