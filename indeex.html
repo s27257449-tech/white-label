@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SHANKAR 555</title>
+
+<style>
+:root{
+  --red1:#ff0000;
+  --red2:#b30000;
+}
+
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background:#0d0d0d;
+  color:white;
+  text-align:center;
+}
+
+header{
+  padding:25px;
+  background:linear-gradient(135deg,var(--red1),var(--red2));
+}
+
+.logo{
+  font-size:36px;
+  font-weight:900;
+  letter-spacing:3px;
+  color:white;
+  text-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.game-box{
+  margin-top:40px;
+}
+
+button{
+  padding:16px 40px;
+  font-size:20px;
+  font-weight:bold;
+  border:none;
+  border-radius:8px;
+  background:linear-gradient(135deg,var(--red1),var(--red2));
+  color:white;
+  cursor:pointer;
+  box-shadow:0 6px 15px rgba(255,0,0,0.4);
+}
+
+button:active{
+  transform:scale(0.95);
+}
+
+footer{
+  margin-top:50px;
+  font-size:14px;
+  opacity:0.8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔥 WHITE LABEL BRAND -->
+<header>
+  <div class="logo">SHANKAR 555</div>
+</header>
+
+<div class="game-box">
+  <h2>Tap & Win Game</h2>
+  <p>Score: <span id="score">0</span></p>
+  <button onclick="tap()">TAP</button>
+</div>
+
+<footer>
+  © 2025 SHANKAR 555 | All Rights Reserved
+</footer>
+
+<script>
+/* GAME LOGIC */
+let score = 0;
+function tap(){
+  score++;
+  document.getElementById("score").innerText = score;
+}
+</script>
+
+</body>
+</html>
